@@ -30,7 +30,7 @@ pipeline {
 
             steps {
 
-                sh "mvn deploy"
+                sh "mvn package"
 
             }
 
