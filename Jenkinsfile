@@ -6,11 +6,11 @@ pipeline {
 
     stages {
 
-        stage('Build') {
+        stage('Clean') {
 
             steps {
 
-                sh "mvn build"
+                sh "mvn clean"
 
             }
 
@@ -26,7 +26,7 @@ pipeline {
 
         }
 
-        stage('Deploy') {
+        stage('Package') {
 
             steps {
 
